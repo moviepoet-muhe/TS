@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function Person(name, age){
+        //     this.name = name
+        //     this.age = age
+        // }
+        // Person.say = function(){
+        //     console.log('hello')
+        // }
+        // Person.say()
+
+        class Person {
+            constructor(name, age){
+                this.name = name
+                this.age = age
+            }
+            // static 可以让类里面的方法变成静态方法
+            static say(){
+                console.log('hello')
+            }
+            // static 可以让类里面的属性变成静态属性
+            static money = '小目标'
+        }
+        Person.say()
+        console.log(Person.money)
+    </script>
+</body>
+</html>
